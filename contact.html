@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    
+    <title>Construction Template | Home</title>
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <!-- Swiper CSS -->
@@ -12,22 +12,44 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
 />
+<!-- Animate CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-<!-- Font Awesome CSS (include this in your <head>) -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-
-    <!-- Bootstrap Bundle JS (with Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
-<link rel="stylesheet" href="css/boostrap.css">
+<link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
+<link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png"><link rel="stylesheet" href="css/boostrap.css">
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/animate.css">
+<!-- <link rel="stylesheet" href="css/font-awesome.css"> -->
+<!-- <link rel="stylesheet" href="css/flaticon_ishpat.css"> -->
+<link rel="stylesheet" href="css/spacing.css">
+<!-- <link rel="stylesheet" href="css/swiper-bundle.css"> -->
+<link rel="stylesheet" href="css/magnific-popup.css">
+<link rel="stylesheet" href="css/image/swiper-gl.min.css">
 
 
+
+
+<!-- Font Awesome CSS (include this in your <head>) -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
 </head>
+
 <body>
+   <div class="mouseCursor cursor-outer" style="visibility: visible;"></div>
+   <div class="mouseCursor cursor-inner" style="visibility: visible;"><span><img src="css/image/mouse-cursor.svg" alt=""></span></div>
+   <div class="back-to-top-wrapper back-to-top-btn-show">
+         <button id="back_to_top" type="button" class="back-to-top-btn">
+            <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M11 6L6 1L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>               
+         </button>
+      </div>
+
+
+
+            <div class="tp-page-wrapper">
     <header class="tp-header-area p-relative">
          <div class="tp-header-top d-none d-xl-block fix">
-            <div class="container-lg container-large">
+            <div class="container container-large">
                <div class="row align-items-center">
                   <div class="col-lg-6">
                      <div class="tp-header-top-info">
@@ -55,9 +77,9 @@
             <div class="container container-large">
                <div class="row align-items-center">
                   <div class="col-lg-2 col-md-3 col-6">
-                     <div class="tp-header-logo">
+                     <div class="tp-header-logo scrolled">
                         <a href="index.html">
-                           <img src="assets/img/logo/logo.png" alt="">
+                           <img src="css/image/logo.png" alt="">
                         </a>
                      </div>
                   </div>
@@ -68,160 +90,17 @@
                               <ul>
                                  <li class="has-dropdown">
                                     <a href="index.html"><span>Home</span></a>
-                                    <div class="tp-submenu submenu has-homemenu">
-                                       <div class="row row-cols-1 row-cols-md-1 row-cols-xl-4 row-cols-xxl-4">
-                                          <div class="col homemenu">
-                                             <div class="homemenu-thumb">
-                                                <img src="assets/img/menu/img-1.jpg" alt="">
-                                                <div class="homemenu-btn">
-                                                   <a class="menu-btn show-1" href="index.html"><span>Multi Page</span></a> <br>
-                                                   <a class="menu-btn show-2" href="index1-one-page.html"><span>One Page</span></a>
-                                                </div>
-                                             </div>
-                                             <div class="homemenu-content text-center">
-                                                <h4 class="homemenu-title">
-                                                   <a href="index.html"><span>Construction</span></a>
-                                                </h4>
-                                             </div>
-                                          </div>
-                                          <div class="col homemenu">
-                                             <div class="homemenu-thumb">
-                                                <img src="assets/img/menu/img-2.jpg" alt="">
-                                                <div class="homemenu-btn">
-                                                   <a class="menu-btn show-1" href="index-2.html"><span>Multi Page</span></a> <br>
-                                                   <a class="menu-btn show-2" href="index2-one-page.html"><span>One Page</span></a>
-                                                </div>
-                                             </div>
-                                             <div class="homemenu-content text-center">
-                                                <h4 class="homemenu-title">
-                                                   <a href="index-2.html"><span>Architecture</span></a>
-                                                </h4>
-                                             </div>
-                                          </div>
-                                          <div class="col homemenu">
-                                             <div class="homemenu-thumb">
-                                                <img src="assets/img/menu/img-3.jpg" alt="">
-                                                <div class="homemenu-btn">
-                                                   <a class="menu-btn show-1" href="index-3.html"><span>Multi Page</span></a> <br>
-                                                   <a class="menu-btn show-2" href="index3-one-page.html"><span>One Page</span></a>
-                                                </div>
-                                             </div>
-                                             <div class="homemenu-content text-center">
-                                                <h4 class="homemenu-title">
-                                                   <a href="index-3.html"><span>Real Estate</span></a>
-                                                </h4>
-                                             </div>
-                                          </div>
-                                          <div class="col homemenu">
-                                             <div class="homemenu-thumb">
-                                                <img src="assets/img/menu/img-5.jpg" alt="">
-                                                <div class="homemenu-btn">
-                                                   <a class="menu-btn show-1" href="index-4.html"><span>Multi Page</span></a> <br>
-                                                   <a class="menu-btn show-2" href="index4-one-page.html"><span>One Page</span></a>
-                                                </div>
-                                             </div>
-                                             <div class="homemenu-content text-center">
-                                                <h4 class="homemenu-title">
-                                                   <a href="index-4.html"><span>Interior</span></a>
-                                                </h4>
-                                             </div>
-                                          </div>
-                                          <div class="col homemenu">
-                                             <div class="homemenu-thumb">
-                                                <img src="assets/img/menu/img-6.jpg" alt="">
-                                                <div class="homemenu-btn">
-                                                   <a class="menu-btn show-1" href="index-5.html"><span>Multi Page</span></a> <br>
-                                                   <a class="menu-btn show-2" href="index5-one-page.html"><span>One Page</span></a>
-                                                </div>
-                                             </div>
-                                             <div class="homemenu-content text-center">
-                                                <h4 class="homemenu-title">
-                                                   <a href="index-5.html"><span>Roofing</span></a>
-                                                </h4>
-                                             </div>
-                                          </div>
-                                          <div class="col homemenu">
-                                             <div class="homemenu-thumb">
-                                                <img src="assets/img/menu/img-7.jpg" alt="">
-                                                <div class="homemenu-btn">
-                                                   <a class="menu-btn show-1" href="index-6.html"><span>Multi Page</span></a> <br>
-                                                   <a class="menu-btn show-2" href="index6-one-page.html"><span>One Page</span></a>
-                                                </div>
-                                             </div>
-                                             <div class="homemenu-content text-center">
-                                                <h4 class="homemenu-title">
-                                                   <a href="index-6.html"><span>Electrician</span></a>
-                                                </h4>
-                                             </div>
-                                          </div>
-                                          <div class="col homemenu">
-                                             <div class="homemenu-thumb">
-                                                <img src="assets/img/menu/img-8.jpg" alt="">
-                                                <div class="homemenu-btn">
-                                                   <a class="menu-btn show-1" href="index-7.html"><span>Multi Page</span></a>
-                                                </div>
-                                             </div>
-                                             <div class="homemenu-content text-center">
-                                                <h4 class="homemenu-title">
-                                                   <a href="index-7.html"><span>Carousel</span></a>
-                                                </h4>
-                                             </div>
-                                          </div>
-                                          <div class="col homemenu">
-                                             <div class="homemenu-thumb">
-                                                <img src="assets/img/menu/img-10.jpg" alt="">
-                                             </div>
-                                             <div class="homemenu-content text-center">
-                                                <h4 class="homemenu-title">
-                                                   <a href="comming-soon.html"><span>Comming Soon</span></a>
-                                                </h4>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
+
                                  </li>
-                                 <li class="has-dropdown"><a href="#"><span>Pages</span></a>
-                                    <ul class="submenu">
-                                       <li><a href="about.html"><span>About</span></a></li>
-                                       <li><a href="history.html"><span>History</span></a></li>
-                                       <li><a href="pricing.html"><span>Pricing</span></a></li>
-                                       <li><a href="testimonial.html"><span>Testimonial</span></a></li>
-                                       <li><a href="team.html"><span>Team</span></a></li>
-                                       <li><a href="team-details.html"><span>Team Details</span></a></li>
-                                       <li><a href="error.html"><span>Error</span></a></li>
-                                    </ul>
+                                 <li class="has-dropdown">                                 
+                                       <a href="about.html"><span>About</span></a>
+
+
                                  </li>
                                  <li class="has-dropdown">
                                     <a href="service.html"><span>Services</span></a>
-                                    <ul class="submenu">
-                                       <li><a href="service.html"><span>Service</span></a></li>
-                                       <li><a href="service-details.html"><span>Service Details</span></a></li>
-                                    </ul>
                                  </li>
-                                 <li class="has-dropdown">
-                                    <a href="portfolio.html"><span>Portfolio</span></a>
-                                    <ul class="submenu">
-                                       <li><a href="portfolio.html"><span>Portfolio</span></a></li>
-                                       <li><a href="portfolio-details.html"><span>Portfolio Details</span></a></li>
-                                    </ul>
-                                 </li>
-                                 <li class="has-dropdown">
-                                    <a href="portfolio.html"><span>Shop</span></a>
-                                    <ul class="submenu">
-                                       <li><a href="shop.html"><span>Shop</span></a></li>
-                                       <li><a href="shop-details.html"><span>Shop Details</span></a></li>
-                                       <li><a href="cart.html"><span>Cart</span></a></li>
-                                       <li><a href="checkout.html"><span>Checkout</span></a></li>
-                                    </ul>
-                                 </li>
-                                 <li class="has-dropdown"><a href="blog.html"><span>Blog</span></a>
-                                    <ul class="submenu">
-                                       <li><a href="blog.html"><span>Blog</span></a></li>
-                                       <li><a href="blog-sidebar.html"><span>Blog Sidebar</span></a></li>
-                                       <li><a href="blog-details.html"><span>Blog Details</span></a></li>
-                                    </ul>
-                                 </li>
-                                 <li><a href="contact.html"><span>Contact</span></a></li>
+                                 <li  class="has-dropdown"><a href="contact.html"><span>Contact</span></a></li>
                               </ul>
                            </nav>
                         </div>
@@ -230,18 +109,18 @@
                   <div class="col-lg-3 col-md-9 col-6">
                      <div class="tp-header-main-right d-flex align-items-center justify-content-end">
                         <div class="tp-header-contact d-xl-flex align-items-center">
+                          
                            <div class="tp-header-contact-icon search-open-btn d-none d-xxl-block">
-                              <span><i class="fa-sharp fa-regular fa-magnifying-glass"></i></span>
+                              <i class="fa-solid fa-magnifying-glass"></i>
                            </div>
-                           <div class="tp-header-contact-icon d-none d-xxl-block">
-                              <button class="cartmini-open-btn"><i class="fa-sharp fa-light fa-cart-shopping"></i></button>
-                           </div>
+                         
                            <div class="tp-header-btn d-none d-xl-block">
-                               <a class="tp-btn tp-icon-style d-none d-xl-block" href="contact.html">Get a Quote <span>
-                                 <svg class="qodef-svg--custom-arrow qodef-m-arrow" xmlns="http://www.w3.org/2000/svg" width="14.2" height="14.2" viewBox="0 0 14.2 14.2">
-                                    <g><path d="M13.2 9V1h-8M13.4.8.7 13.5"></path><path d="M13.2 9V1h-8M13.4.8.7 13.5"></path></g>
-                                    <g><path d="M13.2 9V1h-8M13.4.8.7 13.5"></path><path d="M13.2 9V1h-8M13.4.8.7 13.5"></path></g>
-                                 </svg>
+                              <a class="tp-btn tp-icon-style d-none d-xl-block" href="contact.html">Get a Quote <span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="7" y1="17" x2="17" y2="7" />
+        <polyline points="7 7 17 7 17 17" />
+      </svg>
                               </span></a>
                            </div>
                            <div class="tp-header-hamburger d-xl-none offcanvas-open-btn">
@@ -257,5 +136,23 @@
             </div>
          </div>
       </header>
+
+
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Animate CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<!-- WOW.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+  new WOW().init();
+</script>
+
+
 </body>
 </html>

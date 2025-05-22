@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
-<link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png"><link rel="stylesheet" href="css/boostrap.css">
+<link rel="shortcut icon" type="image/x-icon" href="css/image/favicon.png"><link rel="stylesheet" href="css/boostrap.css">
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/animate.css">
 <!-- <link rel="stylesheet" href="css/font-awesome.css"> -->
@@ -44,7 +44,80 @@
          </button>
       </div>
 
+<div class="offcanvas__area">
+         <div class="offcanvas__close">
+            <button class="offcanvas__close-btn offcanvas-close-btn">
+               <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11 1L1 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M1 1L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+               </svg>
+            </button>
+         </div>
+         <div class="offcanvas__wrapper">
+            <div class="offcanvas__content">
+               <div class="offcanvas__top mb-40">
+                  <div class="offcanvas__logo">
+                     <a href="index.html">
+                        <img src="css/image/logo-white.png" alt="logo">
+                     </a>
+                  </div>
+               </div>
 
+               <div class="tp-main-menu-mobile fix d-xl-none mb-30"><nav class="tp-main-menu-content">
+      <ul>
+        <li  class="has-dropdown"><a href="index.html"><span>Home</span></a></li>
+        <li  class="has-dropdown"><a href="about.html"><span>About</span></a></li>
+        <li  class="has-dropdown"><a href="service.html"><span>Services</span></a></li>
+        <li class="has-dropdown"><a href="contact.html"><span>Contact</span></a></li>
+      </ul>
+    </nav>
+</div>
+               
+               <div class="offcanvas__contact d-none d-xl-block">
+                  <div class="offcanvas__text mb-30">
+                     <p>The design readable content of a page hen looking at its layout The point our of using Movie template</p>
+                  </div>
+                  <div class="offcanvas__gallery mb-30">
+                     <h4 class="offcanvas__title">Gallery</h4>
+
+                  </div>
+               </div>
+               <div class="offcanvas-info mb-30">
+                  <h4 class="offcanvas__title">Contacts</h4>
+                  <div class="offcanvas__contact-content d-flex">
+                     <div class="offcanvas__contact-content-icon">
+                        <i class="fa-sharp fa-solid fa-location-dot"></i>
+                     </div>
+                     <div class="offcanvas__contact-content-content">
+                        <a href="https://www.google.com/maps/search/86+Road+Broklyn+Street,+600+New+York,+USA/@40.6897806,-74.0278086,12z/data=!3m1!4b1">86 Road Broklyn Street, 600 </a>
+                     </div>
+                  </div>
+                  <div class="offcanvas__contact-content d-flex">
+                     <div class="offcanvas__contact-content-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                     </div>
+                     <div class="offcanvas__contact-content-content">
+                        <a href="mailto:needhelp@company.com"> Needhelp@company.com  </a>
+                     </div>
+                  </div>
+                  <div class="offcanvas__contact-content d-flex">
+                     <div class="offcanvas__contact-content-icon">
+                        <i class="fa-solid fa-phone"></i>
+                     </div>
+                     <div class="offcanvas__contact-content-content">
+                        <a href="tel:01310-069824"> +92 666 888 0000</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="offcanvas__social">
+                  <a class="icon facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a class="icon twitter" href="#"><i class="fab fa-twitter"></i></a>
+                  <a class="icon youtube" href="#"><i class="fab fa-youtube"></i></a>
+                  <a class="icon linkedin" href="#"><i class="fab fa-linkedin"></i></a>
+               </div>
+            </div>
+         </div>
+      </div>
 
             <div class="tp-page-wrapper">
     <header class="tp-header-area p-relative">
@@ -100,7 +173,7 @@
                                  <li class="has-dropdown">
                                     <a href="service.html"><span>Services</span></a>
                                  </li>
-                                 <li><a href="contact.html"><span>Contact</span></a></li>
+                                 <li  class="has-dropdown"><a href="contact.html"><span>Contact</span></a></li>
                               </ul>
                            </nav>
                         </div>
@@ -1639,6 +1712,26 @@ items.forEach((item, index) => {
     items.forEach(i => i.classList.remove('active'));
     // Restore active to second item (index 1)
     items[1].classList.add('active');
+  });
+});
+const offcanvas = document.querySelector('.offcanvas__area');
+const openBtn = document.querySelector('.hamburger-btn'); // or '#hamburger-btn' if using id
+const closeBtn = document.querySelector('.offcanvas__close-btn');
+
+openBtn.addEventListener('click', () => {
+  offcanvas.classList.add('offcanvas-opened');
+});
+
+closeBtn.addEventListener('click', () => {
+  offcanvas.classList.remove('offcanvas-opened');
+});
+
+const backToTopBtn = document.getElementById('back_to_top');
+
+backToTopBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'  // smooth scroll effect
   });
 });
 
