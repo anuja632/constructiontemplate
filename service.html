@@ -780,21 +780,23 @@ backToTopBtn.addEventListener('click', () => {
   document.addEventListener("DOMContentLoaded", function () {
     new Swiper(".tp-offer-active", {
       loop: true,
-      // spaceBetween: 8,
-      slidesPerView: 3,
+      spaceBetween: 30,
       speed: 600,
+      slidesPerView: 1, // Default: 1 slide on mobile
+
       navigation: {
         nextEl: ".tp-offer-next",
         prevEl: ".tp-offer-prev",
       },
-  pagination: {
-    el: ".tp-offer-pagination",
-    clickable: true,
-  },
+      pagination: {
+        el: ".tp-offer-pagination",
+        clickable: true,
+      },
 
       breakpoints: {
-        320: {
+                 500: {
           slidesPerView: 1,
+          spaceBetween: 16,
         },
         768: {
           slidesPerView: 2,
@@ -802,9 +804,9 @@ backToTopBtn.addEventListener('click', () => {
         1024: {
           slidesPerView: 3,
         },
-        1440:{
-         slidesPerView:4,
-        },
+        1440: {
+          slidesPerView: 4,
+        }
       }
     });
   });
