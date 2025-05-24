@@ -1,95 +1,4 @@
 @charset "UTF-8";
-/*-----------------------------------------------------------------------------------
-
-    Template Name: Dhora – Movie Studio & Filmmaker HTML Template
-    Author: Theme_Pure
-    Support: basictheme400@gmail.com
-    Description: Dhora – Movie Studio & Filmmaker HTML Template
-    Version: 1.0
-
------------------------------------------------------------------------------------
-
-/************ TABLE OF CONTENTS ***************
-
-	-----------------
-    01. THEME CSS
-	-----------------
-		1.1 Theme Default
-		1.2 Common Classes
-		1.3 Default Spacing
-
-	-----------------
-    02. COMPONENTS css
-	-----------------
-		2.1 Back to top
-		2.2 Theme Settings
-		2.3 Buttons
-		2.4 Animations
-		2.5 Preloader
-		2.6 Background 
-		2.7 Nice Select
-		2.8 Pagination
-		2.9 Offcanvas
-		2.10 Breadcrumb
-		2.11 Accordion
-		2.12 Tab
-		2.13 Modal
-		2.14 Section Title
-		2.15 Search
-	-----------------
-    03. HEADER CSS
-	-----------------
-		3.1 Header Style 1
-
-    ---------------------------------
-	04. MENU CSS
-	---------------------------------
-		4.1 Main menu css
-		4.2 Mean menu css
-		4.3 Mobile css
-
-	---------------------------------
-	05. BLOG CSS
-	---------------------------------
-		5.1 Postbox css
-		5.2 Recent Post css
-		5.3 Sidebar css
-
-	---------------------------------
-	06. FOOTER CSS
-	---------------------------------
-		6.1 Footer Style 1
-		6.2 Footer Style 2
-		6.3 Footer Style 3
-
-	---------------------------------
-	07. PAGES CSS
-	---------------------------------
-		7.1 Hero Css
-		7.2 About Css
-		7.3 Awerds
-		7.4 Counter Css
-		7.5 Video Play Css
-		7.6 Brand Css
-		7.7 Company Css
-		7.8 Contact Css
-		7.9 Cta Css
-		8.0 Faq Css
-		8.1 Feature Css
-		8.2 History Css
-		8.3 Offer Css
-		8.4 Portfolio Css
-		8.5 Pricing Css
-		8.6 Project Css
-		8.7 Service Css
-		8.8 Shop Css
-		8.9 Team Css
-		9.0 Testimonial Css
-
-
-
-**********************************************/
-/*----------------------------------------*/
 /*  1.1 Theme Default
 /*----------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
@@ -2671,12 +2580,25 @@ div.demo img {
   .tp-offer-pagination .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
     bottom: 80px;
   }
+
 }
 @media (max-width: 575px) {
   .tp-offer-pagination .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
     bottom: 35px;
   }
+    .tp-offer-arrow-box {
+    position: absolute;
+    top: -72px !important;
+    right: 0;
 }
+}
+@media only screen and (min-width: 576px) and (max-width: 1023px) {
+.tp-offer-arrow-box
+ {
+    position: absolute;
+    top: -100px !important;
+    right: 0;
+}}
 .tp-offer-pagination .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet, .swiper-pagination-custom .swiper-pagination-bullet, .swiper-pagination-fraction .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
@@ -8553,6 +8475,7 @@ blockquote img {
 /*----------------------------------------*/
 /*  8.3 Offer Css
 /*----------------------------------------*/
+
 .tp-offer-shape {
   position: absolute;
   left: 0;
@@ -16094,6 +16017,14 @@ p.checkout-coupon input[type=text]:focus {
     margin-right: 0;
     margin-bottom: 5px;
   }
+  /* .tp-offer-active {
+  width: 100%;
+  overflow: hidden;
+} */
+
+.swiper-slide {
+  box-sizing: border-box;
+}
 }
 .tp-awards-date-title {
   font-size: 16px;
