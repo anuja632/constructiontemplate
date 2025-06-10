@@ -10559,6 +10559,11 @@ blockquote img {
   z-index: 0;
   background: var(--tp-theme-primary);
 }
+.tp-project-thumb img {
+    width:500px;
+    height: 600px;
+    object-fit: cover;
+  }
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .tp-faq-thumb-wrapper span {
     left: 0;
