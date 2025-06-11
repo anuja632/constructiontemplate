@@ -9617,6 +9617,7 @@ blockquote img {
 }
 .tp-feature-tab-thumb img {
   max-width: 100%;
+  height:500px;
 }
 .tp-feature-tab-box {
   position: absolute;
