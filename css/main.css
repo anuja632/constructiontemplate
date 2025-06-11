@@ -147,6 +147,7 @@ p {
   line-height: 30px;
   margin-bottom: 0px;
   color: var(--tp-text-body);
+  text-align: justify;
 }
 
 a:not([href]):not([class]),
@@ -331,12 +332,12 @@ input[type=color] {
   opacity: 1;
 }
 
-.tp-page-wrapper {
+/* .tp-page-wrapper {
   position: relative;
   z-index: 2;
   margin-bottom: 578px;
   background: var(--tp-common-white);
-}
+} */
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .tp-page-wrapper {
     margin-bottom: 0;
@@ -10551,7 +10552,7 @@ blockquote img {
   }
 .tp-faq-thumb-wrapper span {
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 14%;
   display: inline-block;
   width: 6px;
@@ -11372,6 +11373,9 @@ blockquote img {
   .tp-team-details-elaborate-wrap {
     padding-left: 0;
   }
+  .pl-70 {
+    padding-left: 0 !important;
+}
 }
 .tp-team-details-form {
   margin-top: 20px;
