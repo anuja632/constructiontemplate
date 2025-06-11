@@ -64,7 +64,7 @@ html, body {
   --tp-heading-secondary: #1F242C;
   --tp-heading-1: #2B2B5E;
   --tp-heading-2: #010d14;
-  --tp-text-body: rgb(86, 89, 105);
+  --tp-text-body: rgb(10, 10, 10);
   --tp-text-1: #E3E3E3;
   --tp-text-2: #f8f8f8;
   --tp-border-primary: #FEF3DF;
@@ -147,7 +147,7 @@ p {
   line-height: 30px;
   margin-bottom: 0px;
   color: var(--tp-text-body);
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 a:not([href]):not([class]),
@@ -467,9 +467,10 @@ input[type=color] {
 }
 
 @media (min-width: 1400px) {
-  .container-large {
-    max-width: 1812px;
-  }
+
+      .container-large {
+        max-width: 1400px;
+    }
 }
 @media (min-width: 1400px) {
   .container-custom {
@@ -1265,7 +1266,7 @@ div.demo img {
   top: 0;
   left: 0;
   z-index: 0;
-  opacity: 0;
+  opacity: 1;
   -webkit-transform: scale(1.01);
   transform: scale(1.01);
   -webkit-transition: all 0.3s ease-in-out;
@@ -3247,8 +3248,9 @@ div.demo img {
   display: inline-block;
   color: var(--tp-theme-primary);
   padding-left: 15px;
+  letter-spacing: 3px;
 }
-.tp-section-title-pre::after {
+/* .tp-section-title-pre::after {
   position: absolute;
   content: "";
   height: 6px;
@@ -3257,7 +3259,7 @@ div.demo img {
   top: 50%;
   transform: translateY(-50%);
   border: 1px solid var(--tp-theme-secondary);
-}
+} */
 .tp-section-title-pre-2 {
   position: relative;
   font-size: 14px;
@@ -3527,7 +3529,7 @@ div.demo img {
 }
 .tp-header-top-social a {
   position: relative;
-  font-size: 14px;
+  font-size: 16px;
   margin-left: 18px;
   -webkit-transition: all 0.3s 0s ease-out;
   -moz-transition: all 0.3s 0s ease-out;
@@ -5827,7 +5829,7 @@ blockquote img {
   font-weight: 500;
   color: #9ca5af;
 }
-.tp-footer-widget-content ul li a::before {
+/* .tp-footer-widget-content ul li a::before {
   position: absolute;
   content: "";
   height: 6px;
@@ -5842,7 +5844,7 @@ blockquote img {
   -ms-transition: all 0.3s 0s ease-out;
   -o-transition: all 0.3s 0s ease-out;
   transition: all 0.3s 0s ease-out;
-}
+} */
 .tp-footer-widget-content ul li a:hover {
   color: var(--tp-theme-primary);
   margin-left: 15px;
@@ -8068,7 +8070,7 @@ blockquote img {
 }
 .tp-about-thumb .top {
   position: absolute;
-  top: 0;
+  top: 50px;
   left: 155px;
   z-index: 1;
 }
@@ -10536,16 +10538,12 @@ blockquote img {
   position: relative;
   padding-left: 70px;
 }
-@media only screen and (min-width: 1400px) and (max-width: 1599px), only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px) {
-  .tp-faq-thumb-wrapper {
-    padding-top: 150px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+
+/* @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .tp-faq-thumb-wrapper {
     padding-top: 40px;
   }
-}
+} */
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .tp-faq-thumb-wrapper {
     padding-left: 0;
@@ -11508,6 +11506,7 @@ blockquote img {
   bottom: 0;
   right: 17%;
   z-index: 4;
+  height:600px;
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px), only screen and (min-width: 1200px) and (max-width: 1399px) {
   .tp-contact-thumb .shape-main {
