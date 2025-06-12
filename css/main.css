@@ -1218,11 +1218,11 @@ div.demo img {
 }
 
 .showcase-slider-wrappper {
-  height: 820px;
+  height: 720px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .showcase-slider-wrappper {
-    height: 650px;
+    height: 550px;
   }
 }
 .showcase-slider-wrappper .swiper-slide-active .tp-hero-3-content {
@@ -1277,7 +1277,7 @@ div.demo img {
 
 #showcase-slider-holder {
   width: 100%;
-  height: 820px;
+  height: 720px;
   position: absolute;
   overflow: hidden;
   opacity: 1;
@@ -1285,7 +1285,7 @@ div.demo img {
 }
 
 .port-showcase-slider-item {
-  height: 820px;
+  height: 720px;
 }
 
 .tp-slider__thumb-bg {
@@ -1303,13 +1303,13 @@ div.demo img {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .parallax-slider-active .swiper-slide {
-    height: 650px;
+    height: 550px;
   }
 }
 
 .parallax-slider-active .swiper-container {
   width: 100%;
-  height: 820px;
+  height: 720px;
 }
 
 /*----------------------------------------*/
@@ -2945,7 +2945,7 @@ div.demo img {
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
   .tp-breadcrumb__area {
     padding-top: 150px;
-    padding-bottom: 150px;
+    /* padding-bottom: 100px; */
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
@@ -2966,7 +2966,7 @@ div.demo img {
   position: absolute;
   top: 0px;
   left: 0px;
-  height: 100%;
+  height:500px;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -6177,12 +6177,12 @@ blockquote img {
   background: url(../img/hero/hero-bg-shape.png) no-repeat;
 }
 .tp-hero-content {
-  padding-top: 250px;
+  padding-top: 150px;
   z-index: 8;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
   .tp-hero-content {
-    padding-top: 200px;
+    padding-top: 90px;
   }
 }
 @media (max-width: 575px) {
@@ -11457,6 +11457,9 @@ blockquote img {
     padding-bottom: 130px;
   }
 }
+.tp-contact-area{
+    padding-bottom: 30px;
+}
 .tp-contact-bg {
   position: absolute;
   width: 100%;
@@ -11890,7 +11893,7 @@ blockquote img {
 .tp-contact-wrapper {
   position: relative;
   z-index: 1;
-  padding: 100px;
+  padding:  10px 90px;
   margin-top: -80px;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 0px 80px 0px rgba(30, 22, 22, 0.04);
