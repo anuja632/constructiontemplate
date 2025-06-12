@@ -1222,7 +1222,7 @@ div.demo img {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .showcase-slider-wrappper {
-    height: 550px;
+    height: 720px;
   }
 }
 .showcase-slider-wrappper .swiper-slide-active .tp-hero-3-content {
@@ -2943,22 +2943,53 @@ div.demo img {
 /*  2.11 Breadcrumb
 /*----------------------------------------*/
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
-  .tp-breadcrumb__area {
-    padding-top: 150px;
-    /* padding-bottom: 100px; */
-  }
+.tp-breadcrumb__area{
+height:75vh;
+}
+.tp-breadcrumb__area img{
+  height:75vh;
+
+object-fit: cover;}
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
-  .tp-breadcrumb__area {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
+.tp-breadcrumb__area{
+height:50vh;
+}
+.tp-breadcrumb__area img{
+  height:50vh;
+
+object-fit: cover;}
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .tp-breadcrumb__area.mb-120 {
     margin-bottom: 0;
   }
+  .tp-breadcrumb__area{
+height:75vh;
 }
+.tp-breadcrumb__area img{
+  height:75vh;
+
+object-fit: cover;}
+}
+
+@media only screen and (min-width: 500px){
+  .tp-breadcrumb__area{
+height:50vh;
+}
+.tp-breadcrumb__area img{
+  height:50vh;
+
+object-fit: cover;}
+}
+.tp-breadcrumb__area{
+height:75vh;
+
+}
+.tp-breadcrumb__area img{
+  height:75vh;
+
+object-fit: cover;}
 .tp-breadcrumb__overlay {
   background: rgba(149, 145, 145, 0.05);
 }
@@ -2966,7 +2997,7 @@ div.demo img {
   position: absolute;
   top: 0px;
   left: 0px;
-  height:500px;
+  height:100%;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -11927,14 +11958,26 @@ blockquote img {
   font-weight: 400;
   height: 60px;
   color: #565969;
-  background-color: rgb(248, 248, 248);
+  background-color: rgb(231, 226, 226);
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 .tp-contact-input input::placeholder, .tp-contact-input textarea::placeholder {
   font-size: 16px;
   font-weight: 400;
-  color: #565969;
+  color: black;
 }
+.tp-contact-input select {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+    font-weight: 400;
+  height: 60px;
+    background-color: rgb(231, 226, 226);
+
+}
+
 .tp-contact-input input:focus, .tp-contact-input textarea:focus {
   border: 1px solid var(--tp-theme-primary);
 }
@@ -11996,6 +12039,7 @@ blockquote img {
   font-weight: 700;
   margin-bottom: 10px;
   color: var(--tp-theme-secondary);
+  font-family: var(--tp-ff-p);
 }
 .tp-contact-box {
   margin-bottom: -80px;
