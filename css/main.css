@@ -1175,11 +1175,6 @@ div.demo img {
 .tp-hamburger-btn-white span::after, .tp-hamburger-btn-white span::before {
   background-color: var(--tp-common-white);
 }
-
-/*----------------------------------------*/
-/*  2.7 Carousel
-/*----------------------------------------*/
-/** Swiper styles **/
 .tp-showcase-arrow-box {
   position: absolute;
   top: 50%;
@@ -1218,11 +1213,11 @@ div.demo img {
 }
 
 .showcase-slider-wrappper {
-  height: 720px;
+  height: 820px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .showcase-slider-wrappper {
-    height: 720px;
+    height: 650px;
   }
 }
 .showcase-slider-wrappper .swiper-slide-active .tp-hero-3-content {
@@ -1268,7 +1263,7 @@ div.demo img {
   top: 0;
   left: 0;
   z-index: 0;
-  opacity: 1;
+  opacity: 0;
   -webkit-transform: scale(1.01);
   transform: scale(1.01);
   -webkit-transition: all 0.3s ease-in-out;
@@ -1277,7 +1272,7 @@ div.demo img {
 
 #showcase-slider-holder {
   width: 100%;
-  height: 720px;
+  height: 820px;
   position: absolute;
   overflow: hidden;
   opacity: 1;
@@ -1285,7 +1280,7 @@ div.demo img {
 }
 
 .port-showcase-slider-item {
-  height: 720px;
+  height: 820px;
 }
 
 .tp-slider__thumb-bg {
@@ -1303,13 +1298,34 @@ div.demo img {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .parallax-slider-active .swiper-slide {
-    height: 550px;
+    height: 650px;
   }
 }
+.showcase-slider-wrappper .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7));
+  z-index: 1;
+  pointer-events: none; /* so it doesn’t block clicks */
+}
+
 
 .parallax-slider-active .swiper-container {
   width: 100%;
-  height: 720px;
+  height: 820px;
+}
+
+@media only screen and  (max-width: 575px) {
+
+  .pt-100{
+    padding-top: 0px !important;
+  }
+  .pb-50{
+    padding-bottom: 0px !important;
+  }
+
+  
 }
 
 /*----------------------------------------*/
@@ -2573,9 +2589,10 @@ div.demo img {
   border-color: var(--tp-theme-primary);
   color: var(--tp-common-white);
 }
+
 .tp-offer-pagination .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
   position: absolute;
-  left: 50%;
+  left: 85% !important;
   transform: translateX(-50%);
   bottom: 120px;
   width: auto;
@@ -2584,32 +2601,12 @@ div.demo img {
   .tp-offer-pagination .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
     bottom: 80px;
   }
-
 }
 @media (max-width: 575px) {
   .tp-offer-pagination .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
     bottom: 35px;
   }
-    .tp-offer-arrow-box {
-    position: absolute;
-    top: -72px !important;
-    right: 0;
 }
-.tp-offer-pagination {
-    position: relative;
-    text-align: center;
-    margin-left: 50%;
-    z-index: 10;
-    margin-bottom: 70px !important;
-}
-}
-@media only screen and (min-width: 576px) and (max-width: 1023px) {
-.tp-offer-arrow-box
- {
-    position: absolute;
-    top: -100px !important;
-    right: 0;
-}}
 .tp-offer-pagination .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet, .swiper-pagination-custom .swiper-pagination-bullet, .swiper-pagination-fraction .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
@@ -6221,6 +6218,12 @@ blockquote img {
     padding-top: 150px;
   }
 }
+@media (max-width: 500px) {
+  .tp-hero-content {
+    padding-top: 90px;
+  }
+}
+
 .tp-hero-title {
   font-size: 100px;
   font-weight: 800;
@@ -8227,6 +8230,16 @@ blockquote img {
   .tp-about-icon-content:not(:last-of-type) {
     margin-bottom: 30px;
   }
+  .tp-about-icon img {
+    width:50px !important; 
+    height: 50px !important;
+  }
+}
+@media (max-width:400px){
+  .tp-feature-tab-thumb img {
+    max-width: 100%;
+    height: 400px;
+}
 }
 .tp-about-icon-content h5 {
   font-size: 22px;
@@ -8526,6 +8539,11 @@ blockquote img {
   width: 100%;
   height: 100%;
   z-index: 1;
+}
+.tp-hover-distort-wrapper .main{
+  width: 420px;
+   height: 518px; 
+   margin-top: 60px;
 }
 .tp-hover-distort-img {
   opacity: 1;
@@ -11485,11 +11503,11 @@ blockquote img {
 @media (max-width: 575px) {
   .tp-contact-area {
     padding-top: 130px;
-    padding-bottom: 130px;
+    padding-bottom: 130px !important;
   }
 }
 .tp-contact-area{
-    padding-bottom: 30px;
+    padding-bottom: 100px;
 }
 .tp-contact-bg {
   position: absolute;
@@ -13364,7 +13382,7 @@ tp-pricing-list ul li.disabled {
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .tp-service-details-title {
-    font-size: 36px;
+    font-size: 25px;
   }
 }
 .tp-service-details-title-2 {
