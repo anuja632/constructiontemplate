@@ -1215,7 +1215,7 @@ div.demo img {
 .showcase-slider-wrappper {
   height: 820px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px){
   .showcase-slider-wrappper {
     height: 650px;
   }
@@ -1296,11 +1296,26 @@ div.demo img {
   width: 100%;
   height: 820px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
   .parallax-slider-active .swiper-slide {
     height: 650px;
   }
 }
+ @media only screen and (max-width: 575px){
+    .parallax-slider-active .swiper-slide {
+    height: 500px;
+    width:auto;
+  }
+    .showcase-slider-wrappper {
+    height: 500px;
+  }
+  #showcase-slider-holder {
+  width: 100%;
+  height: 500px;}
+  #canvas-slider .slider-img {
+    width:100%;
+  }
+ }
 .showcase-slider-wrappper .overlay {
   position: absolute;
   top: 0; left: 0;
@@ -2978,6 +2993,7 @@ height:50vh;
   height:50vh;
 
 object-fit: cover;}
+
 }
 .tp-breadcrumb__area{
 height:75vh;
@@ -3013,6 +3029,7 @@ object-fit: cover;}
 }
 .tp-breadcrumb__title.white {
   color: var(--tp-common-white);
+
 }
 
 /*----------------------------------------*/
@@ -6222,6 +6239,9 @@ blockquote img {
   .tp-hero-content {
     padding-top: 90px;
   }
+  .tp-team-details-title{
+    font-size:35px !important;
+  }
 }
 
 .tp-hero-title {
@@ -6290,7 +6310,7 @@ blockquote img {
 }
 @media (max-width: 575px) {
   .tp-hero-title {
-    font-size: 54px;
+    font-size: 40px;
     margin-bottom: 30px;
   }
 }
@@ -13445,6 +13465,7 @@ tp-pricing-list ul li.disabled {
   font-weight: 400;
   margin: 0;
   color: var(--tp-common-white);
+  /* width:200px; */
 }
 
 /*----------------------------------------*/
